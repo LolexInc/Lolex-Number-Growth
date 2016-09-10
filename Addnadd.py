@@ -12,12 +12,12 @@ import currnumberstore
 currnumber = currnumberstore.currnumber
 nextstep = currnumberstore.nextstep
 gone = 0
-while gone != 10000:
+while gone != 1000:
     currnumber = currnumber + nextstep
     nextstep = nextstep +1
     gone = gone + 1
     print (currnumber)
-if gone == 10000 or gone >10000:
+if gone == 1000 or gone >1000:
     import os
     os.remove("currnumberstore.py")
     with io.FileIO("currnumberstore.py","w"):
